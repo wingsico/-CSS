@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML/BODY</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body, html {
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .foo {
+      height: 100%;
+      overflow: scroll;
+    }
+
+    .mask {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: hsla(30, 100%, 50%, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <!-- 
+    透明层无论滚动与否都全屏显示
+    解决IE6下浮动层固定定位的经典方法
+  -->
+
+  <div class="foo">
+    foo
+  </div>
+  <div class="mask"></div>
+</body>
+</html>
