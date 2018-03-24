@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>条件注释</title>
+</head>
+
+<body>
+  <!-- [if IE]>
+    <div class="box" id="box"></div>
+  <![endif] -->
+
+  <!-- [if IE 6]>
+    <div></div>
+  <![endif] -->
+
+  <!-- [if gt IE 7]>
+    <div></div>
+  <![endif] -->
+
+  <!-- [if gte IE 6]>
+    <div></div>
+  <![endif] -->
+  <!-- 
+    gt  great than 大于
+    gte great than or equal 大于等于
+
+    lt less than 小于
+    lte less than or equal 小于等于
+   -->
+  <!-- 结构 -->
+
+  <!--[if [operatop] IE [version]]>
+    <div> some tags </div>
+  <![endif] -->
+  <div>
+    <!--[if !IE]><!-->
+    <div>我不是IE </div>
+    <!--<![endif]-->
+  </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .wrapper {
+      /* display: flex;
+      flex-flow: row wrap;
+      align-items: center; */
+      height: 400px;
+      /* flex-direction 默认 row |row row-reverse column column-reverse 
+        flex-wrap: 默认 nowrap | wrap wrap-reverse
+      */
+    }
+
+    .wrapper>div {
+      width: 100px;
+      display: inline-block;
+
+      /* word-break break-all none */
+      /* word-wrap: break-word; */
+      word-break: break-all;
+
+      /* word-break normal 以浏览器规则给单词换行
+        keep-all 在半角空格或者-换行
+        break-all 满了直接换行
+      */
+      /* display: flex;
+      justify-content: center;
+      align-items: center; */
+      border: 2px solid #ddd;
+      margin: .5em;
+      /* vertical-align: 10px; */
+      /* 
+        vertical-align 只对于内联元素以及table-cell
+      */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div>Lorem, ips-um dolordddddddddddddddddddddd sit amet conse-ctetur adipisicing elit. Ducimus minus reprehenderit vero quos
+      ex voluptas commodi molestias fuga id blanditiis! Tempora corporis ab iusto temporibus magnam vel nisi hic inventore.</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <!-- 
+  问题是：为什么父元素的 overflow:hidden对他们的布局有很大的影响； 当父元素存在overflow:hidden时，子元素的margin-bottom是红色的，视觉上是父元素里的。 但是当父元素取消了，子元素的margin-bottom
+  就被挤在了外面是没有颜色的。 -->
+
+  <!-- 
+    由于margin合并
+    父元素与第一个或最后一个，会产生margin合并
+   -->
+  <style>
+    .father {
+      background-color: red;
+      overflow: hidden;
+    }
+
+    .son {
+      background-color: yellow;
+      width: 100px;
+      height: 100px;
+      padding-bottom: 100px;
+      margin-bottom: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="father">
+    <div class="son"></div>
+  </div>
+  <div>test</div>
+
+</body>
+
+</html>
