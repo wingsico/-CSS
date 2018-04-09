@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    main{
+      counter-reset: makeCount;
+    }
+    main ul li input[type='checkbox']:checked{
+      counter-increment: makeCount;
+    }
+    .counter::after {
+      content: counter(makeCount, lower-roman);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h3>请选择下面的选项</h3>
+    <ul>
+      <li><input type="checkbox" name="item" id="item1" value="吃的">吃的</li>
+      <li><input type="checkbox" name="item" id="item2" value="玩的">玩的</li>
+      <li><input type="checkbox" name="item" id="item3" value="喝的">喝的</li>
+      <li><input type="checkbox" name="item" id="item4" value="丢的">丢的</li>
+    </ul>
+    <p>你已经选中了<span class="counter"></span>项</p>
+  </main>
+</body>
+</html>
